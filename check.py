@@ -14,6 +14,7 @@ def get_month(date):
     return month
 
 train['Month']=train['Date'].apply(get_month)
+test['Month']=test['Date'].apply(get_month)
 
 #check holiday
 def holiday_to_num(isholiday):
@@ -24,3 +25,4 @@ def holiday_to_num(isholiday):
     return num
 
 train['NumHoliday']=train['IsHoliday'].apply(holiday_to_num)
+test['NumHoliday']=test['IsHoliday'].apply(holiday_to_num)
