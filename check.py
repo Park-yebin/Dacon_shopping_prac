@@ -6,6 +6,7 @@ sample_submission=pd.read_csv('dataset/sample_submission.csv')
 
 #change NA
 train=train.fillna(0)
+test=test.fillna(0)
 
 #add month column
 def get_month(date):
